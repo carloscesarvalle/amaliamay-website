@@ -53,7 +53,7 @@ a {
 
 /* background image with animated highlights*/
 
-.bgimage {
+#bg-image {
     top: 6.5vh;
     background-image: url("/images/Amalia.jpg");
     background-size: cover;
