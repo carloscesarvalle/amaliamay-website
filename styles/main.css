@@ -1,0 +1,131 @@
+/* general styles */
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gotham', sans-serif; 
+    font-size: 10px; 
+}
+
+/* navigation bar */
+
+header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 7.5vh;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 999;
+}
+
+
+.svg-logo {
+    width: 2vw;
+    height: 2vh;
+    background-color: black;
+}
+
+.navigation, .social-media {
+    width: 10vw;
+    display: flex;    
+}
+
+.navigation-link {
+    padding: 0 2em;
+}
+
+li { 
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.social-media-link {
+    padding: 0 0.75em
+}
+
+/* background image with animated highlights*/
+
+.bg-image {
+    top: 6.5vh;
+    background-image: url("/images/Amalia.jpg");
+    background-size: cover;
+    background-position: right;
+    background-color: thistle;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.text-for-bg-image {
+    position: absolute;
+    top: 35vh;
+    left: 17.5vw;
+}
+
+h1{
+    font-size: 12.5rem;
+}
+
+.profession {
+    font-size: 3.5rem;
+    padding-left: 12.75em;
+}
+
+.animated-highlights {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+}
+
+.reel, .news, .update {
+    width: 33.33vw;
+    height: 12.5vh;
+    background-color:rgba(211,211,211, 0.25);
+    border:rgba(211,211,211, 0.25) 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-placeholder, .news-image, .update-image {
+    width: 10vw;
+    height: 8vh;
+    background-color: thistle;
+    margin-left: 4rem;
+}
+
+.icon {
+    width: 1rem;
+    order: -1;
+    transition: all; 
+    transition-duration: 0.4s;
+    transform: translateX(-300%);
+    opacity: 1;
+   }
+
+   
+   .reel .watch-reel + .icon:hover {
+   transform: translateX(0);
+   opacity: 1;
+   }
+
+/* bio section styles */
+
+.bio {
+    height: 70vh;
+    background-color: wheat;
+    display: flex;
+}
+
+section .bio-title {
+    font-size: 2.5rem;
+}
