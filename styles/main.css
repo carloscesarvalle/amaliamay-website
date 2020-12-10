@@ -53,6 +53,12 @@ a {
 
 /* background image with animated highlights*/
 
+img {
+    width: 100vw;
+    height: 100vh;
+}
+
+
 #bg-image {
     top: 6.5vh;
     background-image: url("/images/Amalia-photo.jpg");
